@@ -1,19 +1,22 @@
 {
     "education":[
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
+            "cardTitle": "Masters in Computer Science",
+            "cardSubtitle":"Wichita State University",
+            "cardDetailedText": "CGPA - 3.9",
             "icon" : {
-                "src": "images/education/lorem-ipsum.png"
+                "src": "images/education/WSU.png"
             }
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            
+            "cardTitle": "Bachelors in Computer Science",
+            "cardSubtitle":"Amrita Vishwa Vidyapeetham",
+            "cardDetailedText": "CGPA - 3.5",
+            "icon" : {
+                "src": "images/education/Amrita.png"
+            }
+            
         }
     ]
 }
