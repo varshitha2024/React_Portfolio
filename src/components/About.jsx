@@ -9,18 +9,23 @@ import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
   introTextContainer: {
-    margin: 10,
-    flexDirection: 'column',
+    margin: '10px 20px',
     whiteSpace: 'pre-wrap',
     textAlign: 'left',
     fontSize: '1.2em',
     fontWeight: 500,
+    flex: 2,
   },
   introImageContainer: {
-    margin: 10,
+    display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    display: 'flex',
+    flex: 1,
+  },
+  introImage: {
+    maxWidth: '100%',
+    height: 'auto',
+    borderRadius: '8px',
   },
 };
 
@@ -28,40 +33,38 @@ function About(props) {
   const { header } = props;
   const [data, setData] = useState(null);
 
-  const parseIntro = (text) => (
-    <ReactMarkdown
-      children={text}
-    />
-  );
-
   useEffect(() => {
     fetch(endpoints.about, {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
-      .catch((err) => err);
+      .catch((err) => console.error(err));
   }, []);
+
+  const parseIntro = (text) => (
+    <ReactMarkdown>{text}</ReactMarkdown>
+  );
 
   return (
     <>
       <Header title={header} />
       <div className="section-content-container">
         <Container>
-          {data
-            ? (
-              <Fade>
-                <Row>
-                  <Col style={styles.introTextContainer}>
-                    {parseIntro(data.about)}
-                  </Col>
-                  <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
-                  </Col>
-                </Row>
-              </Fade>
-            )
-            : <FallbackSpinner />}
+          {data ? (
+            <Fade>
+              <Row className="d-flex">
+                <Col md={8} style={styles.introTextContainer}>
+                  {parseIntro(data.about)}
+                </Col>
+                <Col md={4} style={styles.introImageContainer}>
+                  <img src={data?.imageSource} alt="profile" style={styles.introImage} />
+                </Col>
+              </Row>
+            </Fade>
+          ) : (
+            <FallbackSpinner />
+          )}
         </Container>
       </div>
     </>

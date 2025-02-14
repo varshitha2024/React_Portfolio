@@ -1,17 +1,14 @@
 {
     "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
+    "coding": "I recently started using LeetCode to improve my problem-solving and coding skills, and its been an exciting journey so far! I've solved 400+ problems on LeetCode, enhancing my skills in algorithms and data structures. It's been a rewarding journey of continuous learning and improvement.",
     "skills": [{
      
-            "title": "Languages & Databases",
+            "title": "Languages",
             "items" : [
      
                 {
                     "icon": "images/skills/java.png",
                     "title": "Java"
-                },
-                {
-                    "icon": "images/skills/php.png",
-                    "title": "PHP"
                 },
                 {
                     "icon": "images/skills/js.png",
@@ -22,17 +19,32 @@
                     "title": "Python"
                 },
                 {
-                    "icon": "images/skills/mysql.png",
-                    "title": "MySQL"
+                    "icon": "images/skills/html.png",
+                    "title": "HTML"
+                },
+                {
+                    "icon": "images/skills/css.png",
+                    "title": "Css"
                 }
         ]},
         {
+            "title": "Database",
+            "items" : [
+                
+                {
+                    "icon": "images/skills/mongo-db.png",
+                    "title": "MongoDB"
+                },
+                {
+                    "icon": "images/skills/mysql.png",
+                    "title": "MySQL"
+                }
+            ]
+        },
+        {
             "title": "Frameworks & Technologies",
             "items" : [
-                {
-                    "icon": "images/skills/android_new.png",
-                    "title": "Android"
-                },
+                
                 {
                     "icon": "images/skills/react.png",
                     "title": "React"
@@ -47,10 +59,6 @@
             "title" : "Tools & Platforms",
             "items": [
                 {
-                    "icon": "images/skills/android-studio.png",
-                    "title": "Android Studio"
-                },
-                {
                     "icon": "images/skills/git.png",
                     "title": "Git"
                 },
@@ -59,5 +67,19 @@
                     "title": "Docker"
                 }
             ]
+    },
+    {
+        "title": "Cloud",
+        "items" : [
+            
+            {
+                "icon": "images/skills/Azure.png",
+                "title": "Azure"
+            },
+            {
+                "icon": "images/skills/AWS.png",
+                "title": "AWS"
+            }
+        ]
     }
 ]}
