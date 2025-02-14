@@ -86,5 +86,4 @@ function Skills({ header }) {
 Skills.propTypes = {
   header: PropTypes.string.isRequired,
 };
-
 export default Skills;
