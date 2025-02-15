@@ -22,7 +22,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  background: '#121212',
+  background: '#23283e',
   color: '#eee',
   accentColor: '#3D84C6',
   chronoTheme: {

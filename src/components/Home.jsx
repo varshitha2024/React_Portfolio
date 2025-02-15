@@ -8,6 +8,7 @@ import FallbackSpinner from './FallbackSpinner';
 const styles = {
   nameStyle: {
     fontSize: '5em',
+    color: '#3D84C6',
   },
   inlineChild: {
     display: 'inline-block',
@@ -25,32 +26,32 @@ function Home() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.home, {
-      method: 'GET',
-    })
+    fetch(endpoints.home, { method: 'GET' })
       .then((res) => res.json())
       .then((res) => setData(res))
-      .catch((err) => err);
+      .catch((err) => console.error('Error fetching data:', err));
   }, []);
 
   return data ? (
     <Fade>
       <div style={styles.mainContainer}>
-        <h1 style={styles.nameStyle}>{data?.name}</h1>
+        <h1 style={styles.nameStyle}>{data.name}</h1>
         <div style={{ flexDirection: 'row' }}>
           <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
           <Typewriter
             options={{
               loop: true,
               autoStart: true,
-              strings: data?.roles,
+              strings: data.roles, // Directly use emojis from JSON
             }}
           />
         </div>
         <Social />
       </div>
     </Fade>
-  ) : <FallbackSpinner />;
+  ) : (
+    <FallbackSpinner />
+  );
 }
 
 export default Home;
