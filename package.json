@@ -44,7 +44,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dependency_installation": "npm install"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -57,5 +58,9 @@
   },
   "resolutions": {
     "react-error-overlay": "6.0.9"
-  }
+  },
+  "engines": {
+  "node": "16.x",
+  "npm": "8.x"
+ }
 }
