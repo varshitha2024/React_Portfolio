@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This project showcases my skills, experience, 
 
 
 <h2 align="center">
-  <img src="https://github.com/varshitha2024/React-portfolio/images/portfolio.png" alt="Varshitha's Portfolio Preview" />
+  <img src="https://raw.githubusercontent.com/varshitha2024/React-portfolio/main/images/portfolio.png" alt="Varshitha's Portfolio Preview" />
   <br>
 </h2>
 
