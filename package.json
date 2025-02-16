@@ -40,13 +40,14 @@
       "last 1 safari version"
     ]
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "CI=false npm run build:actual",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dependency_installation": "npm install"
-  },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "CI=false npm run build:actual",
+      "build:actual": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "dependency_installation": "npm install"
+    },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
