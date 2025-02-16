@@ -58,9 +58,5 @@
   },
   "resolutions": {
     "react-error-overlay": "6.0.9"
-  },
-  "engines": {
-  "node": "16.x", // Replace with your Node.js version
-  "npm": "8.x"    // Replace with your npm version
- }
+  }
 }
