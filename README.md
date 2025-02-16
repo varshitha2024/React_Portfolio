@@ -2,10 +2,9 @@
 
 Welcome to my personal portfolio! This project showcases my skills, experience, and projects in an interactive and visually appealing manner. Built with React, this portfolio highlights my journey as a Full-Stack Developer and serves as a central hub for my professional information.
 
-## 📸 Preview
 
 <h2 align="center">
-  <img src="https://github.com/varshitha2024/React-portfolio/blob/master/images/portfolio.png" alt="Varshitha's Portfolio Preview" />
+  <img src="https://github.com/varshitha2024/React-portfolio/images/portfolio.png" alt="Varshitha's Portfolio Preview" />
   <br>
 </h2>
 
