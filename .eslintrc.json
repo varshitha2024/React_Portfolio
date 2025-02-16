@@ -1,0 +1,18 @@
+{
+    "extends": ["react-app", "airbnb"],
+    "rules": {
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "**/*.test.js",
+            "**/*.spec.js",
+            "**/__tests__/**",
+            "**/setupTests.js"
+          ],
+          "optionalDependencies": false,
+          "peerDependencies": false
+        }
+      ]
+    }
+  }
