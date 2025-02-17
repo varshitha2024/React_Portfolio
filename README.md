@@ -10,7 +10,7 @@ Welcome to my personal portfolio! This project showcases my skills, experience, 
 
 ## 🚀 Live Demo
 
-Experience the live version of the portfolio: **[Click Here](https://dev-portfolio-mayankagarwal09.vercel.app)**
+Experience the live version of the portfolio: **[Click Here](https://varshithavaddi.netlify.app)**
 
 ---
 
